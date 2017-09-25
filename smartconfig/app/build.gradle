@@ -67,4 +67,5 @@ dependencies {
     annotationProcessor 'com.jakewharton:butterknife-compiler:8.6.0'
     compile 'com.tbruyelle.rxpermissions:rxpermissions:0.8.2@aar'
     compile 'io.reactivex:rxjava:1.1.5'
+    compile project(':smartconfig')
 }

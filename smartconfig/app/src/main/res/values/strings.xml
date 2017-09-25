@@ -1,3 +1,9 @@
 <resources>
-    <string name="app_name">smartconfig</string>
+    <string name="app_name">8266一键配置</string>
+    <string name="config">一键配置</string>
+    <string name="startconfig">开始配置</string>
+    <string name="ssid">WIFI账号: </string>
+    <string name="psw">WIFI密码: </string>
+    <string name="smartconfig">设置SmartConfig</string>
+    <string name="setting_tv_3">请输入Wifi密码</string>
 </resources>

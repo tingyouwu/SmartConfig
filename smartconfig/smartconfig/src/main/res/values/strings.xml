@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">smartconfig</string>
+    <!--dialog-->
+    <string name="dialog_cancel">Cancel</string>
+    <string name="dialog_ok">Confirm</string>
+</resources>

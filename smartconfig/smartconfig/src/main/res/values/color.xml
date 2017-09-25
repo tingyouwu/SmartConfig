@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="transparent">#00000000</color>
+    <color name="layout_background">#f2f2f2</color>
+    <color name="white">#FFFFFF</color>
+    <color name="blue_crm">#25B6ed</color>
+    <color name="blue_crm3">#50a4e7</color>
+    <color name="list_line">#DEDFE0</color>
+    <color name="gray_selector">#f2f2f2</color>
+
+    <color name="black">#FF000000</color>
+    <color name="gray_font_1">#666666</color>
+    <color name="gray_font_2">#333333</color>
+    <color name="gray_font_3">#999999</color>
+    <color name="gray_font_4">#e6e6e6</color>
+
+    <color name="success_stroke_color">#A5DC86</color>
+    <color name="float_transparent">#00000000</color>
+    <color name="sweet_dialog_bg_color">#FFFFFF</color>
+    <color name="error_stroke_color">#F27474</color>
+    <color name="trans_success_stroke_color">#33A5DC86</color>
+    <color name="warning_stroke_color">#F8BB86</color>
+
+    <!-- app_msg -->
+    <color name="alert">#CC0000</color>
+    <color name="red">#E51C23</color>
+    <color name="confirm">#FF8800</color>
+    <color name="info">#669900</color>
+
+    <color name="primary">#3F51B5</color>
+
+</resources>

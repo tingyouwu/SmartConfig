@@ -1,0 +1,7 @@
+<resources>
+
+    <!--dialog-->
+    <string name="dialog_cancel">取消</string>
+    <string name="dialog_ok">确认</string>
+
+</resources>

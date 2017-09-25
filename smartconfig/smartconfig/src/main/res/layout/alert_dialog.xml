@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:wheel="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/loading"
+    android:layout_width="@dimen/alert_width"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:layout_gravity="center"
+    android:orientation="vertical"
+    android:background="@drawable/dialog_background">
+
+    <ImageView
+        android:id="@+id/custom_image"
+        android:layout_width="53dp"
+        android:layout_height="53dp"
+        android:layout_marginTop="20dp"
+        android:contentDescription="@string/app_name"
+        android:visibility="gone"
+        android:scaleType="fitCenter" />
+
+    <FrameLayout
+        android:id="@+id/error_frame"
+        android:layout_width="83dp"
+        android:layout_height="83dp"
+        android:layout_marginTop="20dp"
+        android:visibility="gone">
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/error_circle" />
+
+        <ImageView
+            android:id="@+id/error_x"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/error_center_x"
+            android:scaleType="center" />
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/success_frame"
+        android:layout_width="83dp"
+        android:layout_height="83dp"
+        android:layout_marginTop="20dp"
+        android:visibility="gone">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/success_bow" />
+
+        <View
+            android:id="@+id/mask_right"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="-13dp"
+            android:layout_gravity="right"
+            android:background="@android:color/white" />
+
+        <View
+            android:id="@+id/mask_left"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginLeft="-3dp"
+            android:layout_gravity="left"
+            android:background="@android:color/white" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/success_circle" />
+        
+        <com.esp.smartconfig.sweet.SuccessTickView
+            android:id="@+id/success_tick"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/warning_frame"
+        android:layout_width="83dp"
+        android:layout_height="83dp"
+        android:layout_marginTop="20dp"
+        android:visibility="gone">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/warning_circle" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/warning_sigh"
+            android:scaleType="center" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/progress_dialog"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <com.esp.smartconfig.sweet.ProgressWheel
+            android:id="@+id/progressWheel"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            wheel:progressIndeterminate="true"
+            android:layout_gravity="center" />
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/title_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:textColor="#575757"
+        android:layout_marginTop="25dp"
+        android:maxLines="2"
+        android:paddingLeft="10dip"
+        android:paddingRight="10dip"
+        android:ellipsize="end"/>
+
+    <TextView
+        android:id="@+id/content_text"
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="12sp"
+        android:textAlignment="center"
+        android:maxLines="20"
+        android:gravity="center"
+        android:textColor="#797979"
+        android:visibility="gone" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        />
+
+    <View
+        android:id="@+id/line_button"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/list_line"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/cancel_button"
+            style="@style/dialog_blue_button"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:background="@drawable/blue_button_background_left"
+            android:visibility="gone"
+            android:text="@string/dialog_cancel" />
+
+        <Button
+            android:id="@+id/confirm_button"
+            style="@style/dialog_blue_button"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:background="@drawable/blue_button_background_right"
+            android:text="@string/dialog_ok" />
+    </LinearLayout>
+
+</LinearLayout>
